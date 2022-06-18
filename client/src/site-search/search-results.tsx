@@ -456,7 +456,7 @@ function Pagination({
           </li>
         ) : null}{" "}
         {nextPage ? (
-          <li>
+          <li className="next">
             <Link
               to={`?${appendURL(searchParams, { page: `${nextPage}` })}`}
               className="button"
